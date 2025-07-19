@@ -14,6 +14,7 @@ def speak(text):
     eel.DisplayMessage(text)
     engine.say(text)
     engine.runAndWait()
+    time.sleep(2)
 
 
 def takecommand():
@@ -24,6 +25,7 @@ def takecommand():
         r.pause_threshold = 1
         r.adjust_for_ambient_noise(source)
         audio = r.listen(source, 10, 6)
+        
 
     try:
       print("Recognizing...")
