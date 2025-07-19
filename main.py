@@ -1,5 +1,8 @@
 import os
-import eel # type: ignore
+import eel 
+from engine.features import playAssistantSound
+playAssistantSound()
+
 
 eel.init('www')
 
